@@ -134,7 +134,7 @@ export default {
         }
         reader.readAsDataURL(file)
       } else {
-        alert('Sorry, FileReader API not supported')
+        this.$emit('error', 'Sorry, FileReader API not supported')
       }
     },
     rotateImg (rotateDeg) {
