@@ -1,26 +1,26 @@
-﻿# zip-cropped-vue-component
+﻿# zip-cropper-vue-component
 一个支持压缩图片与裁剪图片的vue组件
-   
+
 
 Questions
 ---------
 1. 为什么这么简便，连`package.json`都没有？
 
 	 答：原因很简单，我写来的目的本来是给自己用，或者给公司组内分享使用，所以就不写这么多例子什么的了，我默认大家是都懂的。
-   
+
  2. 这个压缩+裁剪的组件明显用 jsx 写代码更简洁、易读，为什么不用 jsx 写？
- 
+
 	 答：因为目前公司主要做移动端，而且 vue-cli 用的 webpack 模板是 simple 版，而不是完整版, 如果用 jsx 写，意味着我要装4个支持 `vue-jsx` babel 插件，并且还要改 babel 配置，为了大家方便，所以我直接用模板方式来书写组件，而放弃了 render 方式。
- 
+
  3. 这个组件需要依赖什么包，是否适合移动端？
- 
+
 	 答： 目前需要依赖2个包，压缩包没什么配置，非常简洁，但是裁剪插件的配置就非常多了，下面列出依赖包原地址，后面我再写出我的组件需要的传入的 props ，当然如果你需要完全可以修改组件去加入自己需要的参数，其次我目前的公司主要就是做移动端，所以这个组件首先是为移动端考虑的，pc端的适配未考虑，但你可以自己灵活适配。
 	 下面是依赖：
 	 1. [压缩插件 lrz](https://github.com/think2011/localResizeIMG)
 	 2.  [裁剪插件 vue-cropperjs](https://github.com/Agontuk/vue-cropperjs)
 	 3. [clear version: cropperjs 里面有裁剪插件的所有配置参数](https://github.com/fengyuanchen/cropperjs#main)
-   
-   
+
+
 Options
 ----
  - **组件内部是使用 slot 插槽的，所以使用组件标签后，内部可任意自定义内容或组件标签**
@@ -37,20 +37,20 @@ Options
 		 - type: `Boolean`,
 		 - default: `true`，
 		 - Require: `false`,
-		 - explain: 是否要对上传的图片进行压缩处理 
+		 - explain: 是否要对上传的图片进行压缩处理
 
 	 - **isCrop**
 		 - type: `Boolean`,
 		 - default: `true`，
 		 - Require: `false`,
 		 - explain: 是否要对上传的图片进行裁剪处理
-		 
+
 	 - **zipPercent**
 		 - type: `Number`,
 		 - default: `0.7`，
 		 - Require: `false`,
 		 - explain: 图片压缩的比例
-	
+
 	 - **containerWidth**
 		 - type: `Number`,
 		 - default: `375`，
@@ -109,7 +109,7 @@ Options
 
 	Methods
 	---------
-	
+
 	 - **success**
 		 - args: file || canvas
 		 - explain: 当压缩或裁剪成功后的自定义回调事件，只会有一个默认参数。
