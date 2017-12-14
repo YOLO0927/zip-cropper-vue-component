@@ -1,4 +1,4 @@
-# zip-cropped-vue-component
+﻿# zip-cropped-vue-component
 一个支持压缩图片与裁剪图片的vue组件
    
 
@@ -23,7 +23,7 @@ Questions
    
 Options
 ----
- - **组件内部是使用 slot 插槽的，所以使用组件标签后，内部随便用户自己定义，也就是说，内部你可以放张大加好图片，也可以随便放按钮事件，方便用户的扩展性**
+ - **组件内部是使用 slot 插槽的，所以使用组件标签后，内部可任意自定义内容或组件标签**
 
 	Attribute
 	---------
