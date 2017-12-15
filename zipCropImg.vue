@@ -92,7 +92,6 @@ export default {
       !this.cropBoxShow ? this.$refs.input.click() : 0
     },
     upload (e) {
-      console.log(123)
       let file = e.target.files[0]
       let begin = this.beforeUpload(file)
       // 上传前回调，若传入函数返回 false 或 0 则中断上传，可用于上传前校验或检查
@@ -146,9 +145,6 @@ export default {
         this.$emit('success', this.$refs.cropper.getCroppedCanvas(this.outputCanvasData))
       })
     }
-  },
-  created () {
-    console.log(this.cropBoxHeight)
   },
   components: {
     'vue-cropper': VueCropper
