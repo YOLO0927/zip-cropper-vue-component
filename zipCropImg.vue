@@ -137,7 +137,7 @@ export default {
       }
     },
     rotateImg (rotateDeg) {
-      this.$refs.cropper.rotate(90)
+      this.$refs.cropper.rotate(rotateDeg)
     },
     cropComplete () {
       this.$nextTick(() => {
