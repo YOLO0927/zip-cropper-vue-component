@@ -160,7 +160,7 @@ export default {
     display: none;
   }
   .zipCropImg .cropBox{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     background-color: rgba(0,0,0,.7);
