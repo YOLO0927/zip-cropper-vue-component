@@ -3,9 +3,9 @@
     <zip-crop-img
       :isZip="true"
       :isCrop="true"
-      :cropBoxRatio="bodyWidth/200"
+      :cropBoxRatio="bodyWidth/bodyWidth"
       :minCropBoxWidth="bodyWidth"
-      :minCropBoxHeight="200"
+      :minCropBoxHeight="bodyWidth"
       :containerWidth="bodyWidth"
       :beforeUpload="beforeUpload"
       :containerHeight="bodyHeight"
