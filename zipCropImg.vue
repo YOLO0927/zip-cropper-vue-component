@@ -166,6 +166,7 @@ export default {
     background-color: rgba(0,0,0,.7);
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
   }
   .zipCropImg .commands{
     bottom: 5%;
