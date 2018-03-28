@@ -31,7 +31,7 @@ Options
 	 - **beforeUpload**
 		 - type: `Function`,
 		 - Require: `false`,
-		 - explain: 上传图片前的一个回调，方便用户去对文件进行校验或者其他用处。
+		 - explain: 上传图片前的一个回调，方便用户去对文件进行校验或者其他用处, return 0 || false 都可立刻中断上传操作。
 		 - args: file
 	 - **isZip**
 		 - type: `Boolean`,
