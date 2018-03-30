@@ -26,10 +26,10 @@ export default {
   },
   computed: {
     bodyWidth () {
-      return document.body.clientWidth
+      return window.innerWidth
     },
     bodyHeight () {
-      return document.body.clientHeight
+      return window.innerHeight
     }
   },
   methods: {
