@@ -6,7 +6,7 @@
       <vue-cropper
           ref='cropper'
           :guides="true"
-          :view-mode="2"
+          :view-mode="1"
           drag-mode="move"
           :aspectRatio="cropBoxRatio"
           :minCropBoxWidth="minCropBoxWidth"
