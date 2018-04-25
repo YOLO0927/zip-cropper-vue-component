@@ -174,6 +174,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+    text-align: center;
   }
   .zipCropImg .commands button{
     margin: 0 10px;
